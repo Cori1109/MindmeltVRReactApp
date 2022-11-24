@@ -10,7 +10,7 @@ const MyRoutes = () => {
     return (
         <Router>
             {
-                userInfo.userId
+                userInfo.user_id
                     ? <LandingPage />
                     : <Routes>
                         <Route path="/login" element={<LoginPage />} />

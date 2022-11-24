@@ -33,7 +33,7 @@ const Header = () => {
                 <LogoTitle>Virtual Reality Training Demo</LogoTitle>
             </LogoContainer>
             <Popover placement="bottomRight" content={content} trigger="click">
-                <Button type="link" icon={<UserOutlined />} style={{marginRight: "8px", color: "white"}}>{userInfo.userId} <DownOutlined /></Button>
+                <Button type="link" icon={<UserOutlined />} style={{marginRight: "8px", color: "white"}}>{userInfo.user_id} <DownOutlined /></Button>
             </Popover>
         </HeaderContainer>
     );
