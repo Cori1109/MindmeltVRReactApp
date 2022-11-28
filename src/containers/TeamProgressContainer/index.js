@@ -41,7 +41,8 @@ const TeamProgressContainer = (props) => {
             legend: false,
         };
         newConfig.data = data;
-        console.log(newConfig)
+        console.log('newConfig', newConfig);
+
         setChartConfig(newConfig);
     }, [teamDataList])
 

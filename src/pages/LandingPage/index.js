@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 import HomeContainer from "../../containers/HomeContainer";
 import TeamProgressContainer from "containers/TeamProgressContainer";
+import SelfProgressContainer from "containers/SelfProgressContainer";
 import CoursesContainer from "containers/CoursesContainer";
 import FeedContainer from "containers/FeedContainer";
 
@@ -23,6 +24,7 @@ const LandingPage = () => {
                         <Routes>
                             <Route path="/" element={<HomeContainer />} />
                             <Route path="/team" element={<TeamProgressContainer />} />
+                            <Route path="/self" element={<SelfProgressContainer />} />
                             <Route path="/course" element={<CoursesContainer />} />
                             <Route path="/news" element={<FeedContainer />} />
                             <Route path="/login" element={<Navigate to="/" replace />} />
