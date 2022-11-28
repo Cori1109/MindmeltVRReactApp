@@ -12,10 +12,7 @@ export const initialState = {
     token: "",
     user: {
         vr_app_session: 0,
-        userId: "",
-        firstName: "",
-        lastName: "",
-        userRole: ""
+        user_id: ""
     },
     error: false,
 };
@@ -29,7 +26,10 @@ const userReducer = (state = initialState, {type, payload}) =>
                 break;
             case LOGIN_REQUEST_SUCCESS:
                 draft.isLoading = false;
-                draft.user = payload.user;
+                draft.user = {
+                    vr_app_session: payload.id,
+                    user_id: payload.name,
+                };
                 draft.token = payload.token;
                 history.push("/");
                 break;
