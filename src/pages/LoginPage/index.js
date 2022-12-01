@@ -66,7 +66,7 @@ const LoginPage = (props) => {
                         <Title>SmartVR Training Demo</Title>
                         <Form.Item
                             style={{width: "100%"}}
-                            name="username"
+                            name="User_id"
                             rules={[{ required: true, message: 'Please input your username!' }]}
                         >
                             <Input size='large' placeholder='Username' prefix={<UserOutlined />} />
@@ -74,7 +74,7 @@ const LoginPage = (props) => {
 
                         <Form.Item
                             style={{width: "100%"}}
-                            name="password"
+                            name="User_pass"
                             rules={[{ required: true, message: 'Please input your password!' }]}
                         >
                             <Input.Password 
